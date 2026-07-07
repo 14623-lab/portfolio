@@ -1,275 +1,971 @@
+
 /* ==========================
-   Google Font
+   GLOBAL
 ========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+    font-family:'Poppins','Segoe UI',sans-serif;
 }
+
 
 body{
+
     min-height:100vh;
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    overflow:hidden;
-    background:#090909;
-    color:#fff;
-}
 
-/* ==========================
-   พื้นหลัง
-========================== */
-
-.bg-animation{
-    position:fixed;
-    width:100%;
-    height:100%;
-    background:
-        radial-gradient(circle at top,#ff000035,transparent 45%),
-        radial-gradient(circle at bottom,#8b000035,transparent 45%),
-        #090909;
-    z-index:-2;
-}
-
-.bg-animation::before{
-    content:"";
-    position:absolute;
-    width:700px;
-    height:700px;
-    background:red;
-    filter:blur(180px);
-    opacity:.18;
-    animation:move 12s linear infinite alternate;
-}
-
-@keyframes move{
-
-    from{
-        transform:translate(-200px,-120px);
-    }
-
-    to{
-        transform:translate(500px,250px);
-    }
-
-}
-
-/* ==========================
-   กล่องหลัก
-========================== */
-
-.container{
-
-    width:900px;
-    max-width:90%;
-
-    background:rgba(20,20,20,.75);
-
-    border:1px solid rgba(255,0,0,.25);
-
-    border-radius:25px;
-
-    backdrop-filter:blur(18px);
-
-    padding:40px;
-
-    box-shadow:
-    0 0 30px rgba(255,0,0,.25);
-
-    animation:show .9s;
-
-}
-
-@keyframes show{
-
-    from{
-
-        transform:scale(.9);
-
-        opacity:0;
-
-    }
-
-    to{
-
-        transform:scale(1);
-
-        opacity:1;
-
-    }
-
-}
-
-/* ==========================
-   Header
-========================== */
-
-.header{
-
-    text-align:center;
-
-}
-
-.header h1{
-
-    font-size:42px;
-
-    letter-spacing:5px;
-
-    color:#fff;
-
-}
-
-.header p{
-
-    margin-top:10px;
-
-    color:#cccccc;
-
-}
-
-.line{
-
-    width:120px;
-
-    height:4px;
-
-    background:#ff2a2a;
-
-    margin:20px auto 35px;
-
-    border-radius:10px;
-
-}
-
-/* ==========================
-   Menu
-========================== */
-
-.menu{
-
-    display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:25px;
-
-}
-
-.card{
-
-    text-decoration:none;
+    background:#050505;
 
     color:white;
 
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,0,0,.25);
-
-    border-radius:20px;
-
-    padding:30px;
-
-    transition:.35s;
+    overflow-x:hidden;
 
 }
 
-.card i{
-
-    font-size:40px;
-
-    color:#ff2a2a;
-
-    margin-bottom:20px;
-
-}
-
-.card h3{
-
-    margin-bottom:10px;
-
-}
-
-.card p{
-
-    color:#bbbbbb;
-
-    font-size:14px;
-
-}
-
-.card:hover{
-
-    transform:translateY(-8px);
-
-    border-color:#ff0000;
-
-    box-shadow:0 0 25px rgba(255,0,0,.45);
-
-    background:rgba(255,0,0,.08);
-
-}
 
 /* ==========================
-   Footer
+   BACKGROUND
 ========================== */
 
-.footer{
 
-    margin-top:35px;
+.bg-animation{
 
-    text-align:center;
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    z-index:-1;
+
+
+    background:
+
+    radial-gradient(circle at 20% 20%,
+    rgba(255,0,0,.25),
+    transparent 35%),
+
+
+    radial-gradient(circle at 80% 80%,
+    rgba(150,0,0,.25),
+    transparent 35%),
+
+
+    #050505;
 
 }
 
-#clock{
 
-    font-size:18px;
 
-    color:#ff5555;
+.bg-animation::after{
 
-    margin-bottom:10px;
+    content:"";
+
+    position:absolute;
+
+    width:400px;
+
+    height:400px;
+
+    background:red;
+
+    filter:blur(180px);
+
+    opacity:.25;
+
+    animation:lightMove 8s infinite alternate;
 
 }
 
-.footer span{
 
-    color:#aaaaaa;
 
-    font-size:14px;
+@keyframes lightMove{
+
+
+from{
+
+transform:translate(-100px,-50px);
 
 }
+
+
+to{
+
+transform:translate(500px,300px);
+
+}
+
+
+}
+
+
 
 /* ==========================
-   Responsive
+   MAIN CONTAINER
 ========================== */
 
-@media(max-width:768px){
-
-.menu{
-
-grid-template-columns:1fr;
-
-}
-
-.header h1{
-
-font-size:32px;
-
-}
 
 .container{
 
-padding:25px;
+
+width:900px;
+
+max-width:90%;
+
+
+background:
+
+rgba(255,255,255,.06);
+
+
+
+border:
+
+1px solid rgba(255,0,0,.3);
+
+
+
+backdrop-filter:
+
+blur(20px);
+
+
+
+border-radius:30px;
+
+
+
+padding:45px;
+
+
+
+box-shadow:
+
+
+0 0 40px rgba(255,0,0,.25);
+
+
+
+animation:
+
+fadeIn .8s ease;
+
+
 
 }
+
+
+
+@keyframes fadeIn{
+
+
+from{
+
+opacity:0;
+
+transform:scale(.85);
+
+}
+
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+
+}
+
+
+
+
+/* ==========================
+   HEADER
+========================== */
+
+
+.header{
+
+text-align:center;
+
+}
+
+
+
+.header h1{
+
+
+font-size:45px;
+
+
+letter-spacing:8px;
+
+
+text-shadow:
+
+0 0 20px red;
+
+
+
+}
+
+
+
+.header p{
+
+
+color:#ccc;
+
+margin-top:10px;
+
+
+}
+
+
+
+.line{
+
+
+width:120px;
+
+
+height:4px;
+
+
+background:red;
+
+
+margin:20px auto 35px;
+
+
+border-radius:20px;
+
+
+box-shadow:
+
+0 0 20px red;
+
+
+}
+
+
+
+
+
+/* ==========================
+   INDEX CARD MENU
+========================== */
+
+
+.menu{
+
+
+display:grid;
+
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+
+gap:25px;
+
+
+}
+
+
 
 .card{
 
+
+text-decoration:none;
+
+
+color:white;
+
+
+
+padding:30px;
+
+
+
+border-radius:20px;
+
+
+
+background:
+
+rgba(255,255,255,.05);
+
+
+
+border:
+
+1px solid rgba(255,0,0,.25);
+
+
+
+transition:.35s;
+
+
+}
+
+
+
+.card i{
+
+
+font-size:40px;
+
+
+color:#ff2222;
+
+
+margin-bottom:20px;
+
+
+}
+
+
+
+.card h3{
+
+
+margin-bottom:10px;
+
+
+}
+
+
+
+.card p{
+
+
+font-size:14px;
+
+
+color:#bbb;
+
+
+}
+
+
+
+.card:hover{
+
+
+transform:
+
+translateY(-10px)
+scale(1.03);
+
+
+
+background:
+
+rgba(255,0,0,.12);
+
+
+
+border-color:red;
+
+
+
+box-shadow:
+
+0 0 30px red;
+
+
+}
+
+
+
+
+/* ==========================
+   PROFILE
+========================== */
+
+
+.profile-box{
+
+
+display:flex;
+
+
+gap:40px;
+
+
+align-items:center;
+
+
+}
+
+
+
+.profile-image img{
+
+
+width:220px;
+
+
+height:220px;
+
+
+object-fit:cover;
+
+
+border-radius:50%;
+
+
+border:4px solid red;
+
+
+box-shadow:
+
+0 0 30px red;
+
+
+}
+
+
+
+.profile-info h2{
+
+
+font-size:32px;
+
+
+margin-bottom:15px;
+
+
+}
+
+
+
+.profile-info p{
+
+
+line-height:1.8;
+
+
+color:#ddd;
+
+
+}
+
+
+
+.info{
+
+
+margin-top:20px;
+
+
+}
+
+
+
+.info p{
+
+
+margin:12px 0;
+
+
+}
+
+
+
+.info i{
+
+
+color:red;
+
+
+width:25px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   SKILL
+========================== */
+
+
+.skill-title{
+
+
+margin-top:35px;
+
+
+color:#ff3333;
+
+
+}
+
+
+
+.skill{
+
+
+margin-top:20px;
+
+
+}
+
+
+
+.skill p{
+
+
+margin-bottom:8px;
+
+
+}
+
+
+
+.bar{
+
+
+height:10px;
+
+
+background:#333;
+
+
+border-radius:20px;
+
+
+overflow:hidden;
+
+
+}
+
+
+
+.bar span{
+
+
+display:block;
+
+
+height:100%;
+
+
+background:
+
+linear-gradient(
+90deg,
+#800000,
+red
+);
+
+
+
+border-radius:20px;
+
+
+}
+
+
+
+
+/* ==========================
+   EDUCATION TIMELINE
+========================== */
+
+
+.timeline{
+
+
+border-left:
+
+3px solid red;
+
+
+padding-left:30px;
+
+
+}
+
+
+
+.timeline-item{
+
+
+margin-bottom:35px;
+
+
+position:relative;
+
+
+}
+
+
+
+.timeline-item::before{
+
+
+content:"";
+
+
+position:absolute;
+
+
+left:-43px;
+
+
+top:5px;
+
+
+width:18px;
+
+
+height:18px;
+
+
+background:red;
+
+
+border-radius:50%;
+
+
+box-shadow:
+
+0 0 20px red;
+
+
+}
+
+
+
+.timeline-item h2{
+
+
+color:#ff3333;
+
+
+}
+
+
+
+.timeline-item p{
+
+
+color:#ccc;
+
+
+}
+
+
+
+
+
+/* ==========================
+   AWARD
+========================== */
+
+
+.award-box{
+
+
+display:grid;
+
+
+grid-template-columns:
+
+repeat(2,1fr);
+
+
+
+gap:25px;
+
+
+}
+
+
+
+.award-card{
+
+
+padding:30px;
+
+
+border-radius:20px;
+
+
+background:
+
+rgba(255,255,255,.05);
+
+
+
+border:
+
+1px solid rgba(255,0,0,.3);
+
+
+
+transition:.3s;
+
+
+}
+
+
+
+.award-card:hover{
+
+
+transform:translateY(-8px);
+
+
+box-shadow:
+
+0 0 25px red;
+
+
+}
+
+
+
+.award-card i{
+
+
+font-size:40px;
+
+
+color:#ffcc00;
+
+
+}
+
+
+
+
+/* ==========================
+   CONTACT
+========================== */
+
+
+.contact-box{
+
+
+display:flex;
+
+
+flex-direction:column;
+
+
+gap:20px;
+
+
+}
+
+
+
+.contact-item{
+
+
+padding:20px;
+
+
+border-radius:15px;
+
+
+background:
+
+rgba(255,255,255,.05);
+
+
+
+border:
+
+1px solid rgba(255,0,0,.25);
+
+
+}
+
+
+
+.contact-item i{
+
+
+color:red;
+
+
+margin-right:15px;
+
+
+}
+
+
+
+
+
+/* ==========================
+   BUTTON
+========================== */
+
+
+.back{
+
+
+display:inline-block;
+
+
+margin-top:35px;
+
+
+padding:12px 30px;
+
+
+border-radius:20px;
+
+
+background:
+
+linear-gradient(
+90deg,
+#800000,
+red
+);
+
+
+
+color:white;
+
+
+text-decoration:none;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.back:hover{
+
+
+box-shadow:
+
+0 0 25px red;
+
+
+transform:translateY(-5px);
+
+
+}
+
+
+
+
+
+/* ==========================
+   FOOTER CLOCK
+========================== */
+
+
+.footer{
+
+
+text-align:center;
+
+
+margin-top:35px;
+
+
+}
+
+
+
+#clock{
+
+
+color:#ff5555;
+
+
+margin-bottom:10px;
+
+
+}
+
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+
+@media(max-width:768px){
+
+
+.container{
+
+
 padding:25px;
 
-}
 
 }
+
+
+
+.menu{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.profile-box{
+
+
+flex-direction:column;
+
+
+text-align:center;
+
+
+}
+
+
+
+.award-box{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+
+.header h1{
+
+
+font-size:32px;
+
+
+}
+
+
+} 
