@@ -1,971 +1,211 @@
 
-/* ==========================
-   GLOBAL
-========================== */
+<!DOCTYPE html>
+<html lang="th">
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins','Segoe UI',sans-serif;
-}
+<head>
 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
+<title>Thanapat Portfolio</title>
 
-    min-height:100vh;
+<link rel="stylesheet" href="style.css">
 
-    display:flex;
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    justify-content:center;
+</head>
 
-    align-items:center;
 
-    background:#050505;
+<body>
 
-    color:white;
 
-    overflow-x:hidden;
+<div class="bg-animation"></div>
 
-}
 
 
-/* ==========================
-   BACKGROUND
-========================== */
+<div class="container home">
 
 
-.bg-animation{
 
-    position:fixed;
+<section class="hero">
 
-    width:100%;
 
-    height:100%;
+<p class="small-title">
+WELCOME TO MY
+</p>
 
-    z-index:-1;
 
 
-    background:
+<h1>
+PORT<span>FOLIO</span>
+</h1>
 
-    radial-gradient(circle at 20% 20%,
-    rgba(255,0,0,.25),
-    transparent 35%),
 
 
-    radial-gradient(circle at 80% 80%,
-    rgba(150,0,0,.25),
-    transparent 35%),
+<div class="line"></div>
 
 
-    #050505;
 
-}
 
+<h2>
+นาย ธนภัทร ศรีมูลละ
+</h2>
 
 
-.bg-animation::after{
 
-    content:"";
+<p class="class">
+M.6/1 | STUDENT PORTFOLIO
+</p>
 
-    position:absolute;
 
-    width:400px;
 
-    height:400px;
 
-    background:red;
+<p class="intro">
 
-    filter:blur(180px);
+เว็บไซต์รวบรวมข้อมูลส่วนตัว<br>
+ประวัติการศึกษา ผลงาน และความสามารถ
 
-    opacity:.25;
+</p>
 
-    animation:lightMove 8s infinite alternate;
 
-}
 
+<div class="profile-tag">
 
+💻 Web Developer Student
 
-@keyframes lightMove{
+</div>
 
 
-from{
 
-transform:translate(-100px,-50px);
+</section>
 
-}
 
 
-to{
 
-transform:translate(500px,300px);
 
-}
 
+<section class="menu">
 
-}
 
+<a href="profile.html" class="card">
 
 
-/* ==========================
-   MAIN CONTAINER
-========================== */
+<div class="menu-icon">
+👤
+</div>
 
 
-.container{
+<h3>
+PROFILE
+</h3>
 
 
-width:900px;
+<p>
+ข้อมูลส่วนตัว
+</p>
 
-max-width:90%;
 
+</a>
 
-background:
 
-rgba(255,255,255,.06);
 
 
 
-border:
+<a href="education.html" class="card">
 
-1px solid rgba(255,0,0,.3);
 
+<div class="menu-icon">
+🎓
+</div>
 
 
-backdrop-filter:
+<h3>
+EDUCATION
+</h3>
 
-blur(20px);
 
+<p>
+ประวัติการศึกษา
+</p>
 
 
-border-radius:30px;
+</a>
 
 
 
-padding:45px;
 
 
 
-box-shadow:
+<a href="award.html" class="card">
 
 
-0 0 40px rgba(255,0,0,.25);
+<div class="menu-icon">
+🏆
+</div>
 
 
+<h3>
+AWARD
+</h3>
 
-animation:
 
-fadeIn .8s ease;
+<p>
+ผลงาน / รางวัล
+</p>
 
 
+</a>
 
-}
 
 
 
-@keyframes fadeIn{
 
 
-from{
+<a href="contact.html" class="card">
 
-opacity:0;
 
-transform:scale(.85);
+<div class="menu-icon">
+📞
+</div>
 
-}
 
+<h3>
+CONTACT
+</h3>
 
-to{
 
-opacity:1;
+<p>
+ช่องทางติดต่อ
+</p>
 
-transform:scale(1);
 
-}
+</a>
 
 
-}
 
+</section>
 
 
 
-/* ==========================
-   HEADER
-========================== */
 
 
-.header{
 
-text-align:center;
+<footer class="footer">
 
-}
+© Thanapat Srimunla Portfolio
 
+</footer>
 
 
-.header h1{
 
+</div>
 
-font-size:45px;
 
 
-letter-spacing:8px;
+<script src="script.js"></script>
 
 
-text-shadow:
+</body>
 
-0 0 20px red;
+</html>
 
-
-
-}
-
-
-
-.header p{
-
-
-color:#ccc;
-
-margin-top:10px;
-
-
-}
-
-
-
-.line{
-
-
-width:120px;
-
-
-height:4px;
-
-
-background:red;
-
-
-margin:20px auto 35px;
-
-
-border-radius:20px;
-
-
-box-shadow:
-
-0 0 20px red;
-
-
-}
-
-
-
-
-
-/* ==========================
-   INDEX CARD MENU
-========================== */
-
-
-.menu{
-
-
-display:grid;
-
-
-grid-template-columns:
-
-repeat(2,1fr);
-
-
-gap:25px;
-
-
-}
-
-
-
-.card{
-
-
-text-decoration:none;
-
-
-color:white;
-
-
-
-padding:30px;
-
-
-
-border-radius:20px;
-
-
-
-background:
-
-rgba(255,255,255,.05);
-
-
-
-border:
-
-1px solid rgba(255,0,0,.25);
-
-
-
-transition:.35s;
-
-
-}
-
-
-
-.card i{
-
-
-font-size:40px;
-
-
-color:#ff2222;
-
-
-margin-bottom:20px;
-
-
-}
-
-
-
-.card h3{
-
-
-margin-bottom:10px;
-
-
-}
-
-
-
-.card p{
-
-
-font-size:14px;
-
-
-color:#bbb;
-
-
-}
-
-
-
-.card:hover{
-
-
-transform:
-
-translateY(-10px)
-scale(1.03);
-
-
-
-background:
-
-rgba(255,0,0,.12);
-
-
-
-border-color:red;
-
-
-
-box-shadow:
-
-0 0 30px red;
-
-
-}
-
-
-
-
-/* ==========================
-   PROFILE
-========================== */
-
-
-.profile-box{
-
-
-display:flex;
-
-
-gap:40px;
-
-
-align-items:center;
-
-
-}
-
-
-
-.profile-image img{
-
-
-width:220px;
-
-
-height:220px;
-
-
-object-fit:cover;
-
-
-border-radius:50%;
-
-
-border:4px solid red;
-
-
-box-shadow:
-
-0 0 30px red;
-
-
-}
-
-
-
-.profile-info h2{
-
-
-font-size:32px;
-
-
-margin-bottom:15px;
-
-
-}
-
-
-
-.profile-info p{
-
-
-line-height:1.8;
-
-
-color:#ddd;
-
-
-}
-
-
-
-.info{
-
-
-margin-top:20px;
-
-
-}
-
-
-
-.info p{
-
-
-margin:12px 0;
-
-
-}
-
-
-
-.info i{
-
-
-color:red;
-
-
-width:25px;
-
-
-}
-
-
-
-
-
-/* ==========================
-   SKILL
-========================== */
-
-
-.skill-title{
-
-
-margin-top:35px;
-
-
-color:#ff3333;
-
-
-}
-
-
-
-.skill{
-
-
-margin-top:20px;
-
-
-}
-
-
-
-.skill p{
-
-
-margin-bottom:8px;
-
-
-}
-
-
-
-.bar{
-
-
-height:10px;
-
-
-background:#333;
-
-
-border-radius:20px;
-
-
-overflow:hidden;
-
-
-}
-
-
-
-.bar span{
-
-
-display:block;
-
-
-height:100%;
-
-
-background:
-
-linear-gradient(
-90deg,
-#800000,
-red
-);
-
-
-
-border-radius:20px;
-
-
-}
-
-
-
-
-/* ==========================
-   EDUCATION TIMELINE
-========================== */
-
-
-.timeline{
-
-
-border-left:
-
-3px solid red;
-
-
-padding-left:30px;
-
-
-}
-
-
-
-.timeline-item{
-
-
-margin-bottom:35px;
-
-
-position:relative;
-
-
-}
-
-
-
-.timeline-item::before{
-
-
-content:"";
-
-
-position:absolute;
-
-
-left:-43px;
-
-
-top:5px;
-
-
-width:18px;
-
-
-height:18px;
-
-
-background:red;
-
-
-border-radius:50%;
-
-
-box-shadow:
-
-0 0 20px red;
-
-
-}
-
-
-
-.timeline-item h2{
-
-
-color:#ff3333;
-
-
-}
-
-
-
-.timeline-item p{
-
-
-color:#ccc;
-
-
-}
-
-
-
-
-
-/* ==========================
-   AWARD
-========================== */
-
-
-.award-box{
-
-
-display:grid;
-
-
-grid-template-columns:
-
-repeat(2,1fr);
-
-
-
-gap:25px;
-
-
-}
-
-
-
-.award-card{
-
-
-padding:30px;
-
-
-border-radius:20px;
-
-
-background:
-
-rgba(255,255,255,.05);
-
-
-
-border:
-
-1px solid rgba(255,0,0,.3);
-
-
-
-transition:.3s;
-
-
-}
-
-
-
-.award-card:hover{
-
-
-transform:translateY(-8px);
-
-
-box-shadow:
-
-0 0 25px red;
-
-
-}
-
-
-
-.award-card i{
-
-
-font-size:40px;
-
-
-color:#ffcc00;
-
-
-}
-
-
-
-
-/* ==========================
-   CONTACT
-========================== */
-
-
-.contact-box{
-
-
-display:flex;
-
-
-flex-direction:column;
-
-
-gap:20px;
-
-
-}
-
-
-
-.contact-item{
-
-
-padding:20px;
-
-
-border-radius:15px;
-
-
-background:
-
-rgba(255,255,255,.05);
-
-
-
-border:
-
-1px solid rgba(255,0,0,.25);
-
-
-}
-
-
-
-.contact-item i{
-
-
-color:red;
-
-
-margin-right:15px;
-
-
-}
-
-
-
-
-
-/* ==========================
-   BUTTON
-========================== */
-
-
-.back{
-
-
-display:inline-block;
-
-
-margin-top:35px;
-
-
-padding:12px 30px;
-
-
-border-radius:20px;
-
-
-background:
-
-linear-gradient(
-90deg,
-#800000,
-red
-);
-
-
-
-color:white;
-
-
-text-decoration:none;
-
-
-transition:.3s;
-
-
-}
-
-
-
-.back:hover{
-
-
-box-shadow:
-
-0 0 25px red;
-
-
-transform:translateY(-5px);
-
-
-}
-
-
-
-
-
-/* ==========================
-   FOOTER CLOCK
-========================== */
-
-
-.footer{
-
-
-text-align:center;
-
-
-margin-top:35px;
-
-
-}
-
-
-
-#clock{
-
-
-color:#ff5555;
-
-
-margin-bottom:10px;
-
-
-}
-
-
-
-
-/* ==========================
-   MOBILE
-========================== */
-
-
-@media(max-width:768px){
-
-
-.container{
-
-
-padding:25px;
-
-
-}
-
-
-
-.menu{
-
-
-grid-template-columns:1fr;
-
-
-}
-
-
-
-.profile-box{
-
-
-flex-direction:column;
-
-
-text-align:center;
-
-
-}
-
-
-
-.award-box{
-
-
-grid-template-columns:1fr;
-
-
-}
-
-
-
-.header h1{
-
-
-font-size:32px;
-
-
-}
-
-
-} 
