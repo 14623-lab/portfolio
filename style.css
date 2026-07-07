@@ -1,25 +1,34 @@
 
+
 <!DOCTYPE html>
 <html lang="th">
 
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <title>Thanapat Portfolio</title>
 
+
 <link rel="stylesheet" href="style.css">
+
 
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Prompt:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+
 </head>
+
 
 
 <body>
 
 
+
 <div class="bg-animation"></div>
+
 
 
 
@@ -27,18 +36,29 @@
 
 
 
+
+
 <section class="hero">
 
 
+
 <p class="small-title">
+
 WELCOME TO MY
+
 </p>
 
 
 
+
+
 <h1>
+
 PORT<span>FOLIO</span>
+
 </h1>
+
+
 
 
 
@@ -47,15 +67,26 @@ PORT<span>FOLIO</span>
 
 
 
+
+
 <h2>
+
 นาย ธนภัทร ศรีมูลละ
+
 </h2>
 
 
 
+
+
+
 <p class="class">
+
 M.6/1 | STUDENT PORTFOLIO
+
 </p>
+
+
 
 
 
@@ -63,21 +94,34 @@ M.6/1 | STUDENT PORTFOLIO
 <p class="intro">
 
 เว็บไซต์รวบรวมข้อมูลส่วนตัว<br>
-ประวัติการศึกษา ผลงาน และความสามารถ
+
+ประวัติการศึกษา ผลงาน และความสามารถ<br>
+
+ด้านเทคโนโลยีและการพัฒนาเว็บไซต์
 
 </p>
 
 
 
+
+
+
+
 <div class="profile-tag">
 
-💻 Web Developer Student
+💻 Web Development Student
 
 </div>
 
 
 
+
+
+
 </section>
+
+
+
 
 
 
@@ -87,25 +131,44 @@ M.6/1 | STUDENT PORTFOLIO
 <section class="menu">
 
 
+
+
+
 <a href="profile.html" class="card">
 
 
+
 <div class="menu-icon">
+
 👤
+
 </div>
 
 
+
+
 <h3>
+
 PROFILE
+
 </h3>
 
 
+
+
 <p>
+
 ข้อมูลส่วนตัว
+
 </p>
 
 
+
 </a>
+
+
+
+
 
 
 
@@ -114,22 +177,37 @@ PROFILE
 <a href="education.html" class="card">
 
 
+
 <div class="menu-icon">
+
 🎓
+
 </div>
 
 
+
+
 <h3>
+
 EDUCATION
+
 </h3>
 
 
+
+
 <p>
+
 ประวัติการศึกษา
+
 </p>
 
 
+
 </a>
+
+
+
 
 
 
@@ -139,22 +217,37 @@ EDUCATION
 <a href="award.html" class="card">
 
 
+
 <div class="menu-icon">
+
 🏆
+
 </div>
 
 
+
+
 <h3>
+
 AWARD
+
 </h3>
 
 
+
+
 <p>
+
 ผลงาน / รางวัล
+
 </p>
 
 
+
 </a>
+
+
+
 
 
 
@@ -164,22 +257,36 @@ AWARD
 <a href="contact.html" class="card">
 
 
+
 <div class="menu-icon">
+
 📞
+
 </div>
 
 
+
+
 <h3>
+
 CONTACT
+
 </h3>
 
 
+
+
 <p>
-ช่องทางติดต่อ
+
+ข้อมูลติดต่อ
+
 </p>
 
 
+
 </a>
+
+
 
 
 
@@ -190,11 +297,20 @@ CONTACT
 
 
 
+
+
+
 <footer class="footer">
+
 
 © Thanapat Srimunla Portfolio
 
+
 </footer>
+
+
+
+
 
 
 
@@ -202,10 +318,17 @@ CONTACT
 
 
 
+
+
+
+
 <script src="script.js"></script>
 
 
+
+
 </body>
+
 
 </html>
 
